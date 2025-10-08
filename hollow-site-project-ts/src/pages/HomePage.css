@@ -1,0 +1,30 @@
+.games-titles-paragraph {
+  font-weight: bold;
+  color: black;
+}
+
+.games-release-paragraph {
+  color: green;
+  font-weight: bold;
+}
+
+.silksong-mainpage-button {
+  background-color: rgba(228, 177, 10, 0.945);
+  color: rgb(0, 0, 0);
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  width: 150px;
+  margin-right: 12px;
+}
+
+.buy-now-button {
+  background-color: orange;
+  color: rgb(0, 0, 0);
+  height: 36px;
+  border: none;
+  border-radius: 18px;
+  width: 120px;
+  cursor: pointer;
+}

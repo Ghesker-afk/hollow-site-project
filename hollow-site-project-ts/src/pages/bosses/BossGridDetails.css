@@ -1,0 +1,24 @@
+.boss-grid-header {
+  font-size: 18px;
+  font-family: Arial;
+  background-color: grey;
+  color: white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.boss-grid-header-highlight {
+  text-decoration: underline;
+}
+
+.bosses-grid-container {
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}

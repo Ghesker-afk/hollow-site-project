@@ -1,0 +1,25 @@
+p {
+  font-family: Arial;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.boss-name-text {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.boss-health-text {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: gray;
+}
+
+.boss-container {
+  border-color: grey;
+  border-width: 1px;
+  border-radius: 8px;
+  border-style: solid;
+}

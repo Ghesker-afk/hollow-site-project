@@ -11,20 +11,30 @@
 .silksong-mainpage-button {
   background-color: rgba(228, 177, 10, 0.945);
   color: rgb(0, 0, 0);
-  height: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   border: none;
   border-radius: 18px;
   font-size: 15px;
-  width: 150px;
+  padding-left: 32px;
+  padding-right: 32px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .buy-now-button {
   background-color: orange;
   color: rgb(0, 0, 0);
-  height: 36px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
   border: none;
   border-radius: 18px;
   width: 120px;
   cursor: pointer;
+}
+
+.hit-calculator-text {
+  color: red;
 }

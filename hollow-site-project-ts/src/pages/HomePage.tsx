@@ -1,9 +1,13 @@
 import './HomePage.css';
+import { estimateHits } from '../utils/damage';
 import { Header } from '../components/Header';
+import { BossPage } from './bosses/BossPage';
 
 export function HomePage() {
   return (
     <>
+      <title>Homepage</title>
+
       <Header />
 
       <div>
@@ -26,6 +30,16 @@ export function HomePage() {
         <button className="buy-now-button">
           Buy now
         </button>
+
+        <p className="hit-calculator-text">
+          Damage to kill Karmelita (with zero updates on needle!): {estimateHits(1500, 5)}
+          <br />
+          Damage to kill Lost Lace without needle upgrade: {estimateHits(1800, 5)}
+          <br />
+          Damage to kill Lost Lace with all upgrades: {estimateHits(1800, 21)}
+        </p>
+
+        <BossPage />
       </div>
     </>
   );

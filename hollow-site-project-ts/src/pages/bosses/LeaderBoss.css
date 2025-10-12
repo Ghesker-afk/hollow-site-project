@@ -1,0 +1,50 @@
+.highest-vote-quantity-text {
+  font-family: Arial;
+  font-size: 18px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.highest-vote-quantity-button {
+  font-family: Arial;
+  font-size: 18px;
+  color: rgba(54, 206, 168, 0.856);
+  background-color: rgb(255, 255, 255);
+  border-color: rgba(54, 206, 168, 0.856);
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  transition: background-color 0.15s,
+    color 0.15s;
+  margin-bottom: 20px;
+}
+
+.highest-vote-quantity-button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(54, 206, 168, 0.856);
+}
+
+.votes-quantity-text {
+  font-family: Arial;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.explanation-text {
+  font-family: Arial;
+  font-size: 16px;
+  background-color: rgb(190, 31, 31);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.explanation-text-highlight:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

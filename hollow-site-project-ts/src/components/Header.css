@@ -1,9 +1,16 @@
 .header-grid-container {
-  margin-top: 30px;
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  border-bottom-width: 1px; 
+  border-bottom-style: solid;
+  border-bottom-color: white;
 }
 
 .black-header-container-theme {
@@ -245,4 +252,24 @@
 .alternate-background-button:hover {
   background-color: grey;
   color: rgb(255, 255, 255);
+}
+
+a {
+  font-family: Arial;
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.hamburger-menu-button {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.hamburger-menu-button img {
+  height: 24px;
 }

@@ -1,13 +1,14 @@
 import { Routes, Route } from 'react-router';
 import { HomePage } from "./pages/HomePage";
+import { HornetPage } from './pages/HornetPage';
 import './App.css';
 
 function App() {
   return (
     <>
     <Routes>
-      <Route path="" element={<HomePage />}></Route>
-      <Route path="/hornet" element={<HomePage />}></Route>
+      <Route index element={<HomePage />}></Route>
+      <Route path="/hornet" element={<HornetPage />}></Route>
     </Routes>
     </>
   )

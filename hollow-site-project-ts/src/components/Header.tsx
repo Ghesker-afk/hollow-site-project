@@ -1,6 +1,8 @@
 import { Link } from 'react-router';
 import { useState } from 'react';
+import { Sidebar } from './Sidebar';
 import './Header.css';
+import HamburguerMenu from '../assets/hamburger-menu.svg';
 
 export function Header() {
   const [backgroundTheme, setBackgroundTheme] = useState('white');
@@ -8,8 +10,20 @@ export function Header() {
   function alternateBackgroundTheme(): void {
     if (backgroundTheme === 'white') {
       setBackgroundTheme('black');
+      return;
     } else {
       setBackgroundTheme('white');
+    }
+  }
+
+  const [sidebarState, setSidebarState] = useState(0);
+
+  function toggleSidebar(): void {
+    if (sidebarState === 0) {
+      setSidebarState(1);
+      return;
+    } else {
+      setSidebarState(0);
     }
   }
 
@@ -18,8 +32,22 @@ export function Header() {
       <div 
         className={backgroundTheme === 'black' ? "header-grid-container black-header-container-theme" : "header-grid-container white-header-container-theme"}
       >
+        <div 
+        className="hamburger-menu-button"
+        onClick={toggleSidebar}
+        >
+          <button>
+            <img src={HamburguerMenu} />
+          </button>
+          
+        </div>
+
+        {sidebarState === 1 && <Sidebar />}
+
         <button className="home-button">
-          Home
+          <Link to="/">
+            Home
+          </Link>
         </button>
 
         <button className="maps-button">
@@ -55,7 +83,7 @@ export function Header() {
         </button>
 
         <button className="hornet-button">
-          <Link to="/hornet">
+          <Link className="hornet-route-link" to="/hornet">
             Hornet
           </Link>
         </button>

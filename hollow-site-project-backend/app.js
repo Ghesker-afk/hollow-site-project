@@ -1,10 +1,16 @@
 const express = require('express');
-
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('<h2>Hi there, bro!!!!! </h2>');
-});
+const bosses = require('./routes/Bosses');
+
+// middleware
+
+app.use(express.json());
+
+// routes
+
+// this first argument is the root route for the bosses router
+app.use('/api/v1/bosses', bosses);
 
 const port = process.env.PORT || 3000;
 

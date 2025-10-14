@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router';
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/home/HomePage";
 import { HornetPage } from './pages/HornetPage';
 import './App.css';
 

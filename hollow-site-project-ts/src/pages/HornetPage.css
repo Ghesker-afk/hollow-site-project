@@ -1,0 +1,135 @@
+body {
+  padding-top: 100px;
+}
+
+p, h1, span {
+  font-family: Roboto;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.hornet-main-container {
+  height: 1000px;
+  background-color: rgb(44, 42, 39);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+.hornet-main-container h1 {
+  padding-top: 10px;
+  border-bottom-color: rgb(162, 169, 177);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-bottom: 7.2px;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.hornet-section-text {
+  margin-left: 15px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+
+.topic-word-highlight {
+  color: rgb(254, 182, 86);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.topic-word-highlight:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.beastiary-entry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.beastiary-text {
+  font-size: 20px;
+  letter-spacing: 0.25px;
+  font-weight: 500;
+  font-style: italic;
+  width: 630px;
+  line-height: 32px;
+}
+
+.hornet-content-aside {
+  line-height: 24px;
+  font-family: Roboto;
+  color: rgba(255, 255, 255, 0.87);
+  width: 310px;
+  float: right;
+  margin-left: 10px;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+.hornet-image-aside {
+  width: 100%;
+}
+
+.hornet-aside-item {
+  gap: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 9px;
+  border-bottom-color: rgb(255, 172, 145);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.hornet-aside-item h3 {
+  line-height: 24px;
+  font-size: 12px;
+  color: rgb(255, 255, 255);
+  overflow-wrap: break-word;
+  font-family: Roboto;
+}
+
+.hornet-aside-title {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+}
+
+.hornet-aside-list {
+  text-align: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.hornet-aside-list-item {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgba(255, 255, 255, 0.87);
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 9px;
+  line-height: 14px;
+}

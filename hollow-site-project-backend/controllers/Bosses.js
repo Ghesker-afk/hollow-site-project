@@ -1,13 +1,20 @@
+const Boss = require('../models/Boss');
+
 const getAllBosses = (req, res) => {
   res.send('get all bosses');
 };
 
-const createBoss = (req, res) => {
-  res.send('create boss');
+// only the properties specified on the schema will pass to the database!
+
+const createBoss = async (req, res) => {
+  const boss = await Boss.create(req.body);
+  res.status(201).json({
+    boss
+  });
 };
 
 const getBoss = (req, res) => {
-  res.send('get single boss');
+  res.json({ id: req.params.id });
 };
 
 const updateBoss = (req, res) => {

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <Routes>
-      <Route index element={<HomePage />}></Route>
+      <Route path="/api/v1/bosses" element={<HomePage />}></Route>
       <Route path="/hornet" element={<HornetPage />}></Route>
     </Routes>
     </>

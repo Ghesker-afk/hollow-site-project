@@ -9,6 +9,7 @@ require('dotenv').config();
 
 // middleware
 
+app.use(express.static('../hollow-site-project-ts'));
 app.use(express.json());
 
 // routes

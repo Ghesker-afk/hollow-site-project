@@ -1,6 +1,7 @@
 import './HomePage.css';
 import { estimateHits } from '../../utils/damage';
 import { Header } from '../../components/Header';
+import { Footer } from '../../components/Footer';
 import { BossPage } from '../bosses/BossPage';
 
 export function HomePage() {
@@ -40,6 +41,8 @@ export function HomePage() {
         </p>
 
         <BossPage />
+
+        <Footer />
       </div>
     </>
   );

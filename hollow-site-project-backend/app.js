@@ -7,15 +7,21 @@ const connectDB = require('./db/connect');
 // in order to access our secret values on .env, we only need to require the dotenv package
 require('dotenv').config();
 
+const notFound = require('./middleware/not-found');
+const errorHandlerMiddleware = require('./middleware/error-handler');
+
 // middleware
 
-app.use(express.static('../hollow-site-project-ts'));
 app.use(express.json());
 
 // routes
 
 // this first argument is the root route for the bosses router
 app.use('/api/v1/bosses', bosses);
+
+app.use(notFound);
+app.use(errorHandlerMiddleware);
+// this function needs to be in the bottom of the middlewares
 
 const port = process.env.PORT || 3000;
 

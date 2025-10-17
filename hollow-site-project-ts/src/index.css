@@ -5,4 +5,36 @@
 body {
   padding-top: 30px;
   padding-left: 80px;
+  font-family: Roboto;
+  background-color: rgb(44, 42, 39);
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3 {
+  line-height: 30px;
+  letter-spacing: -0.2px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+h1, h2 {
+  border-bottom: 1px solid transparent;
+  border-bottom-color: white;
+  border-image: linear-gradient(to right, white 0%,transparent 100%) 1;
+  padding-bottom: 5px;
 }

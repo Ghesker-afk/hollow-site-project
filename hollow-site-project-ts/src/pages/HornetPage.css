@@ -1,15 +1,6 @@
-body {
-  padding-top: 100px;
-}
-
-p, h1, span {
-  font-family: Roboto;
-  color: rgba(255, 255, 255, 0.87);
-}
-
 .hornet-main-container {
+  padding-top: 30px;
   height: 1000px;
-  background-color: rgb(44, 42, 39);
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -19,11 +10,8 @@ p, h1, span {
   padding-right: 10px;
 }
 
-.hornet-main-container h1 {
+#hornet-page-title {
   padding-top: 10px;
-  border-bottom-color: rgb(162, 169, 177);
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
   margin-bottom: 7.2px;
   margin-left: 0;
   margin-right: 0;
@@ -34,6 +22,7 @@ p, h1, span {
   margin-left: 15px;
   letter-spacing: 0.5px;
   line-height: 24px;
+  margin-bottom: 350px;
 }
 
 .topic-word-highlight {
@@ -132,4 +121,53 @@ p, h1, span {
   padding-right: 12px;
   padding-top: 9px;
   line-height: 14px;
+}
+
+.hornet-summary-container {
+  width: 175px;
+  background-color: rgba(0, 0, 0, 0.42);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  border-color: grey;
+  border-width: 1px;
+  border-style: solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.hide-and-show-button {
+  color: rgb(254, 182, 86);
+  cursor: pointer;
+}
+
+.hide-and-show-button:hover {
+  text-decoration: underline;
+}
+
+.hornet-summary-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0; 
+  cursor: pointer;
+}
+
+.hornet-summary-list-item {
+  transition: color 0.10s,
+    opacity 0.10s;
+}
+
+.hornet-summary-list-item:hover {
+  opacity: 0.98;
+  color: rgb(0, 255, 255);
+}
+
+.hornet-summary-image {
+  width: 100%;
 }
